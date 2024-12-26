@@ -1,8 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Roboto", serif;
+    font-weight: 500;
     background-color: rgb(33, 33, 33);
+    overflow: hidden; 
 }
 
 #warning-container{
@@ -10,6 +12,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    animation-name: boot;
+    animation-duration: 600ms;
+}
+
+@keyframes boot {
+    0%{transform: translateY(100px);}
+    0%{opacity: 0;}
 }
 
 #warning{
@@ -21,6 +30,10 @@ body{
 #warning-content{
     text-wrap: wrap;
     padding: 1rem
+}
+
+#warning-content-mobile{
+    text-wrap: wrap;
 }
 
 button{
@@ -38,6 +51,13 @@ button:hover{
     cursor: pointer;
 }
 
-p{
-    filter: blur(10px);
+button:active{
+    transform: scale(0.9);
 }
+
+@media only screen and (max-width: 600px) {
+    #warning-content-mobile::after{
+            color: red;
+            content: " DETECTED: youre vieving this website on a mobile device adobe software is only available on Windows and macos you can view this website for testing purproses";
+        }
+    }

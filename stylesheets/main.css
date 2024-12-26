@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Roboto", serif;
+    font-weight: 500;
     background-color: rgb(33, 33, 33);
 }
 
@@ -9,16 +10,22 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 #card{
-    width: 35vh;
+    backdrop-filter: blur(50px);
+    width:35vh;
     background-color: white;
     border-radius: 1vh;
     animation-name: boot;
-    animation-duration: 600ms;
+    transition: 100ms;
+    animation-duration: 500ms;
     box-shadow: 0px 0px 10px 0px black;
+}
+
+#card:hover{
+    transform: scale(1.05);
 }
 
 #card-content{
@@ -32,6 +39,7 @@ body{
 }
 
 nav{
+    z-index: 1;
     position: sticky;
     top: 0;
 }
@@ -53,7 +61,6 @@ a{
 
 @keyframes boot {
     0%{opacity: 0%;}
-    0%{transform: perspective(300px) rotateY(90deg);}
     0%{filter: blur(20px);}
 }
 
@@ -71,6 +78,11 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+
+button:active{
+    transform: scale(0.9);
+}
+
 
 img{
     width: 3rem;
