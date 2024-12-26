@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(33, 33, 33);
+}
+
+#card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#card{
+    width: 35vh;
+    background-color: white;
+    border-radius: 1vh;
+    animation-name: boot;
+    animation-duration: 600ms;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#card-content{
+    padding: 1rem;
+}
+
+#page-1-content{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+#nav-content{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: rgb(0, 179, 255);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+a{
+    color: rgb(0, 179, 255);
+    text-decoration: none;
+}
+
+@keyframes boot {
+    0%{opacity: 0%;}
+    0%{transform: perspective(300px) rotateY(90deg);}
+    0%{filter: blur(20px);}
+}
+
+button{
+    padding:10px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 1vh;
+    transition: 100ms;
+}
+
+button:hover{
+    background-color: rgb(19, 109, 148);
+    color: white;
+    cursor: pointer;
+}
+
+img{
+    width: 3rem;
+}

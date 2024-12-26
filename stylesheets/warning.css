@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(33, 33, 33);
+}
+
+#warning-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#warning{
+    padding: 10px;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+#warning-content{
+    text-wrap: wrap;
+    padding: 1rem
+}
+
+button{
+    padding:10px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 1vh;
+    transition: 100ms;
+}
+
+button:hover{
+    background-color: rgb(19, 109, 148);
+    color: white;
+    cursor: pointer;
+}
+
+p{
+    filter: blur(10px);
+}
