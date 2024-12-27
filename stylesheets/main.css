@@ -1,88 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    background-color: rgb(33, 33, 33);
-}
-
-#card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-#card{
-    backdrop-filter: blur(50px);
-    width:35vh;
-    background-color: white;
-    border-radius: 1vh;
-    animation-name: boot;
-    transition: 100ms;
-    animation-duration: 500ms;
-    box-shadow: 0px 0px 10px 0px black;
-}
-
-#card:hover{
-    transform: scale(1.05);
-}
-
-#card-content{
-    padding: 1rem;
-}
-
 #page-1-content{
     display: flex;
     justify-content: center;
     color: white;
 }
-
-nav{
-    z-index: 1;
-    position: sticky;
-    top: 0;
-}
-
-#nav-content{
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    color: rgb(0, 179, 255);
-    backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 10px 0px black;
-}
-
-a{
-    color: rgb(0, 179, 255);
-    text-decoration: none;
-}
-
-@keyframes boot {
-    0%{opacity: 0%;}
-    0%{filter: blur(20px);}
-}
-
-button{
-    padding:10px;
-    background-color: black;
-    color: white;
-    border-style: none;
-    border-radius: 1vh;
-    transition: 100ms;
-}
-
-button:hover{
-    background-color: rgb(19, 109, 148);
-    color: white;
-    cursor: pointer;
-}
-
-button:active{
-    transform: scale(0.9);
-}
-
 
 img{
     width: 3rem;
