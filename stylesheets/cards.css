@@ -6,7 +6,6 @@
 }
 
 #card{
-    backdrop-filter: blur(50px);
     width:35vh;
     background-color: white;
     border-radius: 1vh;
@@ -26,7 +25,6 @@
 }
 
 #warning{
-    backdrop-filter: blur(50px);
     width:60vh;
     background-color: white;
     border-radius: 1vh;
