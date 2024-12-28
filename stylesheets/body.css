@@ -1,7 +1,15 @@
+*{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: "Roboto", serif;
     font-weight: 500;
     background-color: rgb(33, 33, 33);
+}
+
+#content{
+    min-height: 40.9rem;
 }

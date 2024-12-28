@@ -8,8 +8,10 @@ nav{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1vh;
     color: rgb(0, 179, 255);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 a{
