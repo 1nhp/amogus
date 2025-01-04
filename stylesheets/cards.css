@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vh;
+    gap: 5vh;
 }
 
 #card{
-    width:30vh;
+    width:35vh;
     background-color: #f9f9f9;
     border: 1.5px solid #8e8e8e;
     border-radius: 1vh;
