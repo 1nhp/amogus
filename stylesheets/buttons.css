@@ -1,18 +1,21 @@
 button{
     padding:5px;
-    background-color: black;
+    background-color: #005fb8;
+    border: 1px solid #0059ad;
+    border-top: 2px solid #6aa1d4;
     color: white;
-    border-style: none;
-    border-radius: 1vh;
-    transition: 100ms;
+    border-radius: 4px;
 }
 
 button:hover{
-    background-color: rgb(19, 109, 148);
-    color: white;
+    background-color: #004d94;
+    border: 1px solid #005eb6;
+    border-top: 2px solid #005db4;
     cursor: pointer;
 }
 
 button:active{
-    transform: scale(0.9);
-}
+    background-color: #00315e;
+    border: 1px solid #002f5c;
+    border-top: 2px solid #2d455c;
+}   

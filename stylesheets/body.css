@@ -2,14 +2,17 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    background-color: rgb(33, 33, 33);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818;
 }
 
 #content{
-    min-height: 40.9rem;
+    min-height: 42rem;
 }
