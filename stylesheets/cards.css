@@ -6,18 +6,24 @@
 }
 
 #card{
-    width:35vh;
+    width: 35vh;
+    overflow: hidden;
     background-color: #f9f9f9;
     border: 1.5px solid #8e8e8e;
     border-radius: 1vh;
-    overflow: hidden;
+}
+
+#card-content{
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
 }
 
 #download{
     border-top: 1.5px solid #8e8e8e;
     background-color: #1d1d1d;
-    justify-content: center;
-    padding: 3vh;
+    padding: 2vh;
 }
 
 #warning-container{
@@ -35,9 +41,5 @@
 }
 
 #warning-content{
-    padding: 1rem;
-}
-
-#card-content{
-    padding: 1rem;
+    padding: 1vh;
 }
